@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet } from "react-router";
+import "./App.css";
+import NavbarSection from "./components/global/NavbarSection";
+import FooterSection from "./components/global/FooterSection";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "animate.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="max-w-[1440px] mx-auto w-full h-screen flex flex-col">
+      <NavbarSection></NavbarSection>
+      <div className="w-full py-10"></div>
+      <div className="flex-1 bg-green-100 w-full">
+        <Outlet></Outlet>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <FooterSection></FooterSection>
+    </div>
+  );
 }
 
-export default App
+export default App;
