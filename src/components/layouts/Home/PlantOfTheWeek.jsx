@@ -30,8 +30,8 @@ const PlantOfTheWeek = () => {
   }
 
   return (
-    <section className="bg-green-50 py-16 px-4 md:px-0">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="bg-green-50 py-16 px-4">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <img
           src={plant.image}
           alt={plant.plantName}

@@ -24,7 +24,7 @@ const TopPlants = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:py-14 py-10 w-full">
+    <div className="px-4 md:py-14 py-10 w-full">
       <h2 className="sm:text-3xl text-2xl font-bold text-center text-green-700">
         Top Rated Indoor Plants
       </h2>
@@ -33,7 +33,7 @@ const TopPlants = () => {
         fresh air, natural beauty, and calm vibes to your home.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 w-full">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 w-full">
         {topPlants.map((plant) => (
           <div
             key={plant.plantId}

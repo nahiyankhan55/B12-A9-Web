@@ -3,8 +3,8 @@ import footerLogo from "/logo.png";
 
 const FooterSection = () => {
   return (
-    <div className="md:px-16 sm:px-10 px-5 py-5 bg-linear-to-tl from-green-950 via-black to-gray-800 w-full">
-      <div className="w-full border-b-2 border-gray-500 flex items-start gap-5 justify-between flex-wrap text-white py-5">
+    <div className="px-4 py-5 bg-linear-to-tl from-green-950 via-black to-gray-800 w-full">
+      <div className="w-full max-w-6xl mx-auto border-b-2 border-gray-500 flex items-start gap-5 justify-between flex-wrap text-white py-5">
         <div>
           <h2 className="font-bold sm:text-2xl text-xl flex items-center gap-2">
             <img

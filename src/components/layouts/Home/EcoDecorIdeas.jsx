@@ -1,7 +1,7 @@
 const EcoDecorIdeas = () => {
   return (
-    <section className="bg-green-50 py-14 px-4 md:px-8 ">
-      <div className="max-w-5xl mx-auto text-center mb-8">
+    <section className="bg-green-50 py-14 px-4">
+      <div className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="sm:text-3xl text-2xl font-bold text-green-700">
           Eco Decor Ideas
         </h2>
@@ -11,7 +11,7 @@ const EcoDecorIdeas = () => {
         </p>
       </div>
 
-      <div className="space-y-3 max-w-4xl mx-auto">
+      <div className="space-y-3 max-w-6xl mx-auto">
         <div className="collapse collapse-arrow bg-white border border-green-100 shadow-sm">
           <input type="radio" name="eco-accordion" defaultChecked />
           <div className="collapse-title font-semibold text-green-700">
