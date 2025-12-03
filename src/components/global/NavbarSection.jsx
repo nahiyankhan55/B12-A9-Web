@@ -62,6 +62,16 @@ const NavbarSection = () => {
                     ? "font-bold hover:text-gray-600 text-purple-700 duration-300 py-1 px-3 shadow-lg hover:bg-gray-200 border-b-2 rounded-lg"
                     : "hover:text-cyan-600 text-gray-700 duration-300 py-1 px-3 hover:bg-cyan-50 rounded-lg"
                 }
+                to={"/contact"}
+              >
+                Contact
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-bold hover:text-gray-600 text-purple-700 duration-300 py-1 px-3 shadow-lg hover:bg-gray-200 border-b-2 rounded-lg"
+                    : "hover:text-cyan-600 text-gray-700 duration-300 py-1 px-3 hover:bg-cyan-50 rounded-lg"
+                }
                 to={"/Profile"}
               >
                 Profile
@@ -109,6 +119,16 @@ const NavbarSection = () => {
             to={"/about"}
           >
             About Us
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-bold hover:text-gray-600 text-purple-700 duration-300 bg-white py-1 px-3 shadow-lg hover:bg-gray-200 border-b-2 rounded-lg"
+                : "hover:text-cyan-600 text-gray-700 duration-300 py-1 px-3 hover:bg-cyan-50 rounded-lg"
+            }
+            to={"/contact"}
+          >
+            Contact
           </NavLink>
           <NavLink
             className={({ isActive }) =>

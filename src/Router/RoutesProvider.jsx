@@ -10,6 +10,7 @@ import Register from "../components/layouts/Auth/Register";
 import ForgotPassPage from "../components/layouts/Auth/ForgotPassPage";
 import LoginChecker from "./LoginChecker";
 import AboutUs from "../components/layouts/About/AboutUs";
+import ContactPage from "../components/layouts/Contact/ContactPage";
 
 const RoutesProvider = () => {
   const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const RoutesProvider = () => {
         {
           path: "/about",
           element: <AboutUs></AboutUs>,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage></ContactPage>,
         },
         {
           path: "/plant/:id",
