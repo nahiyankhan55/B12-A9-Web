@@ -9,6 +9,7 @@ import LoginPage from "../components/layouts/Auth/LoginPage";
 import Register from "../components/layouts/Auth/Register";
 import ForgotPassPage from "../components/layouts/Auth/ForgotPassPage";
 import LoginChecker from "./LoginChecker";
+import AboutUs from "../components/layouts/About/AboutUs";
 
 const RoutesProvider = () => {
   const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const RoutesProvider = () => {
         {
           path: "/plants",
           element: <Plants></Plants>,
+        },
+        {
+          path: "/about",
+          element: <AboutUs></AboutUs>,
         },
         {
           path: "/plant/:id",

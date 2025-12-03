@@ -11,7 +11,7 @@ const NavbarSection = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-[1440px] mx-auto lg:px-12 md:px-8 px-5 py-5 w-full bg-purple-100 fixed shadow-md z-50">
+    <div className="md:max-w-[1440px] w-full max-w-svh mx-auto lg:px-12 md:px-8 px-5 py-5 bg-purple-100 fixed shadow-md z-50">
       <div className="flex items-center gap-3 justify-between w-full max-w-6xl mx-auto">
         <div className="flex items-center gap-1">
           <div className="dropdown lg:hidden">
@@ -45,6 +45,16 @@ const NavbarSection = () => {
                 to={"/plants"}
               >
                 Plants
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-bold hover:text-gray-600 text-purple-700 duration-300 py-1 px-3 shadow-lg hover:bg-gray-200 border-b-2 rounded-lg"
+                    : "hover:text-cyan-600 text-gray-700 duration-300 py-1 px-3 hover:bg-cyan-50 rounded-lg"
+                }
+                to={"/about"}
+              >
+                About Us
               </NavLink>
               <NavLink
                 className={({ isActive }) =>
@@ -89,6 +99,16 @@ const NavbarSection = () => {
             to={"/plants"}
           >
             Plants
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "font-bold hover:text-gray-600 text-purple-700 duration-300 bg-white py-1 px-3 shadow-lg hover:bg-gray-200 border-b-2 rounded-lg"
+                : "hover:text-cyan-600 text-gray-700 duration-300 py-1 px-3 hover:bg-cyan-50 rounded-lg"
+            }
+            to={"/about"}
+          >
+            About Us
           </NavLink>
           <NavLink
             className={({ isActive }) =>
