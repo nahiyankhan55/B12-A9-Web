@@ -11,6 +11,7 @@ import ForgotPassPage from "../components/layouts/Auth/ForgotPassPage";
 import LoginChecker from "./LoginChecker";
 import AboutUs from "../components/layouts/About/AboutUs";
 import ContactPage from "../components/layouts/Contact/ContactPage";
+import SupportPage from "../components/layouts/Support/SupportPage";
 
 const RoutesProvider = () => {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const RoutesProvider = () => {
         {
           path: "/contact",
           element: <ContactPage></ContactPage>,
+        },
+        {
+          path: "/support",
+          element: <SupportPage></SupportPage>,
         },
         {
           path: "/plant/:id",
