@@ -63,4 +63,4 @@ The platform emphasizes **simplicity, calm design, and user-friendly interaction
 
 ## GitHub Repository
 
-- [https://github.com/programming-hero-web-course2/b12-a9-firesheild-nahiyankhan55](https://github.com/programming-hero-web-course2/b12-a9-firesheild-nahiyankhan55)
+- [https://github.com/nahiyankhan55/B12-A9-Web](https://github.com/nahiyankhan55/B12-A9-Web)

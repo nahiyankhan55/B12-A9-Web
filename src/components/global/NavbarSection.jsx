@@ -11,8 +11,8 @@ const NavbarSection = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="md:max-w-[1440px] w-full max-w-svh mx-auto lg:px-12 md:px-8 px-5 py-5 bg-purple-100 fixed shadow-md z-50">
-      <div className="flex items-center gap-3 justify-between w-full max-w-6xl mx-auto">
+    <div className="max-w-[1440px] w-full mx-auto lg:px-12 px-2 fixed z-50">
+      <div className="flex items-center gap-3 justify-between w-full max-w-6xl mx-auto mt-2 bg-purple-100 shadow-md lg:pl-5 px-3 py-2 rounded-full">
         <div className="flex items-center gap-1">
           <div className="dropdown lg:hidden">
             <div
@@ -201,8 +201,8 @@ const NavbarSection = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-lg bg-linear-to-br from-green-800 via-green-600 to-blue-800"
-                  : "py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-lg bg-linear-to-br from-green-700 via-green-600 to-green-400 hover:from-green-800 hover:via-green-700 hover:to-purple-500 duration-300 transition"
+                  ? "py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-full bg-linear-to-br from-green-800 via-green-600 to-blue-800"
+                  : "py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-full bg-linear-to-br from-green-700 via-green-600 to-green-400 hover:from-green-800 hover:via-green-700 hover:to-purple-500 duration-300 transition"
               }
               to={"/login"}
             >
@@ -211,8 +211,8 @@ const NavbarSection = () => {
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? "sm:flex hidden py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-lg bg-linear-to-br from-blue-800 via-blue-600 to-green-800"
-                  : "sm:flex hidden py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-lg bg-linear-to-br from-blue-700 via-blue-600 to-blue-400 hover:from-blue-800 hover:via-blue-700 hover:to-purple-500 duration-300 transition"
+                  ? "sm:flex hidden py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-full bg-linear-to-br from-blue-800 via-blue-600 to-green-800"
+                  : "sm:flex hidden py-2 font-semibold text-white sm:px-6 sm:text-lg text-sm px-3 rounded-full bg-linear-to-br from-blue-700 via-blue-600 to-blue-400 hover:from-blue-800 hover:via-blue-700 hover:to-purple-500 duration-300 transition"
               }
               to={"/register"}
             >
